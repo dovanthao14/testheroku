@@ -10,9 +10,9 @@
 class DB
 {
         // Các biến thông tin kết nối
-    private $hostname = 'localhost',
-            $username = 'getdatabase',
-            $password = '',
+    private $hostname = 'mysql5031.site4now.net',
+            $username = 'a7a99e_dothao',
+            $password = 'dovanthao2404',
             $dbname = 'getdatabase';
     // Biến lưu trữ kết nối
     public $cn = NULL;

@@ -8,17 +8,17 @@
 */
  
 // Require các thư viện PHP
-// require_once(realpath($_SERVER["DOCUMENT_ROOT"]) .'/system_luauytin/connect@data.php');
-// require_once(realpath($_SERVER["DOCUMENT_ROOT"]) .'/system_luauytin/Session.php');
-// require_once(realpath($_SERVER["DOCUMENT_ROOT"]) .'/system_luauytin/Functions.php');
-// require_once(realpath($_SERVER["DOCUMENT_ROOT"]) .'/system_luauytin/Pagination.php');
-// require_once(realpath($_SERVER["DOCUMENT_ROOT"]) .'/core/phpmailer.php');
+require_once(realpath($_SERVER["DOCUMENT_ROOT"]) .'/system_luauytin/connect@data.php');
+require_once(realpath($_SERVER["DOCUMENT_ROOT"]) .'/system_luauytin/Session.php');
+require_once(realpath($_SERVER["DOCUMENT_ROOT"]) .'/system_luauytin/Functions.php');
+require_once(realpath($_SERVER["DOCUMENT_ROOT"]) .'/system_luauytin/Pagination.php');
+require_once(realpath($_SERVER["DOCUMENT_ROOT"]) .'/core/phpmailer.php');
 
-require_once(realpath($_SERVER["DOCUMENT_ROOT"]) .'\shopacc\system_luauytin\connect@data.php');
-require_once(realpath($_SERVER["DOCUMENT_ROOT"]) .'\shopacc\system_luauytin\Session.php');
-require_once(realpath($_SERVER["DOCUMENT_ROOT"]) .'\shopacc\system_luauytin\Functions.php');
-require_once(realpath($_SERVER["DOCUMENT_ROOT"]) .'\shopacc\system_luauytin\Pagination.php');
-require_once(realpath($_SERVER["DOCUMENT_ROOT"]) .'\shopacc\core\phpmailer.php');
+// require_once(realpath($_SERVER["DOCUMENT_ROOT"]) .'\shopacc\system_luauytin\connect@data.php');
+// require_once(realpath($_SERVER["DOCUMENT_ROOT"]) .'\shopacc\system_luauytin\Session.php');
+// require_once(realpath($_SERVER["DOCUMENT_ROOT"]) .'\shopacc\system_luauytin\Functions.php');
+// require_once(realpath($_SERVER["DOCUMENT_ROOT"]) .'\shopacc\system_luauytin\Pagination.php');
+// require_once(realpath($_SERVER["DOCUMENT_ROOT"]) .'\shopacc\core\phpmailer.php');
 
 // Kết nối database
 $db = new DB();
