@@ -1,0 +1,74 @@
+[02-Dec-2018 11:26:46 Asia/Ho_Chi_Minh] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 5
+[02-Dec-2018 11:26:46 Asia/Ho_Chi_Minh] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 5
+[02-Dec-2018 11:26:46 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined function sendMail() in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 12
+[02-Dec-2018 11:26:50 Asia/Ho_Chi_Minh] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 5
+[02-Dec-2018 11:26:50 Asia/Ho_Chi_Minh] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 5
+[02-Dec-2018 11:26:50 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined function sendMail() in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 12
+[02-Dec-2018 11:26:51 Asia/Ho_Chi_Minh] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 5
+[02-Dec-2018 11:26:51 Asia/Ho_Chi_Minh] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 5
+[02-Dec-2018 11:26:51 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined function sendMail() in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 12
+[02-Dec-2018 11:26:51 Asia/Ho_Chi_Minh] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 5
+[02-Dec-2018 11:26:51 Asia/Ho_Chi_Minh] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 5
+[02-Dec-2018 11:26:51 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined function sendMail() in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 12
+[02-Dec-2018 11:26:51 Asia/Ho_Chi_Minh] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 5
+[02-Dec-2018 11:26:51 Asia/Ho_Chi_Minh] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 5
+[02-Dec-2018 11:26:51 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined function sendMail() in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 12
+[02-Dec-2018 11:28:33 Asia/Ho_Chi_Minh] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 5
+[02-Dec-2018 11:28:33 Asia/Ho_Chi_Minh] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 5
+[02-Dec-2018 11:28:33 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined function sendMail() in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 12
+[02-Dec-2018 11:28:35 Asia/Ho_Chi_Minh] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 5
+[02-Dec-2018 11:28:35 Asia/Ho_Chi_Minh] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 5
+[02-Dec-2018 11:28:35 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined function sendMail() in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 12
+[02-Dec-2018 11:28:35 Asia/Ho_Chi_Minh] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 5
+[02-Dec-2018 11:28:35 Asia/Ho_Chi_Minh] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 5
+[02-Dec-2018 11:28:35 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined function sendMail() in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 12
+[02-Dec-2018 11:28:35 Asia/Ho_Chi_Minh] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 5
+[02-Dec-2018 11:28:35 Asia/Ho_Chi_Minh] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 5
+[02-Dec-2018 11:28:35 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined function sendMail() in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 12
+[02-Dec-2018 11:31:00 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function sendMailAttachment(), 5 passed in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 9 and exactly 7 expected in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/function.php:42
+Stack trace:
+#0 /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php(9): sendMailAttachment('H\xC6\xB0\xE1\xBB\x9Bng d\xE1\xBA\xABn ...', 'B\xE1\xBA\xA1n \xC4\x91ang t\xC3\xAC...', 'Mega Shop', 'tapkichtaikhoan...', '')
+#1 {main}
+  thrown in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/function.php on line 42
+[02-Dec-2018 11:31:38 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function sendMailAttachment(), 5 passed in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 9 and exactly 7 expected in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/function.php:42
+Stack trace:
+#0 /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php(9): sendMailAttachment('H\xC6\xB0\xE1\xBB\x9Bng d\xE1\xBA\xABn ...', 'B\xE1\xBA\xA1n \xC4\x91ang t\xC3\xAC...', 'Mega Shop', 'tapkichtaikhoan...', '')
+#1 {main}
+  thrown in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/function.php on line 42
+[02-Dec-2018 11:31:38 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function sendMailAttachment(), 5 passed in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 9 and exactly 7 expected in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/function.php:42
+Stack trace:
+#0 /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php(9): sendMailAttachment('H\xC6\xB0\xE1\xBB\x9Bng d\xE1\xBA\xABn ...', 'B\xE1\xBA\xA1n \xC4\x91ang t\xC3\xAC...', 'Mega Shop', 'tapkichtaikhoan...', '')
+#1 {main}
+  thrown in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/function.php on line 42
+[02-Dec-2018 11:32:32 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function sendMailAttachment(), 5 passed in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php on line 12 and exactly 7 expected in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/function.php:38
+Stack trace:
+#0 /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/sendmail.php(12): sendMailAttachment('H\xC6\xB0\xE1\xBB\x9Bng d\xE1\xBA\xABn ...', 'B\xE1\xBA\xA1n \xC4\x91ang t\xC3\xAC...', 'Mega Shop', 'tapkichtaikhoan...', '')
+#1 {main}
+  thrown in /home/ccxlduzvhosting/public_html/lienquan.shop/core/PHPMailer/function.php on line 38

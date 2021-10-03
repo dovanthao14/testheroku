@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /assets/
+Disallow: /core/
+Disallow: /include/
+Disallow: /products/
+Disallow: /system_luauytin/
+Sitemap: /sitemap.xml

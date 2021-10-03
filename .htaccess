@@ -1,0 +1,178 @@
+#╔═════════════════════════════════════════════╗
+#║             Design by LuaUyTin              ║
+#║      Facebook: facebook.com/luauytin        ║
+#║   Hotline: 0984.459.954 - 0899.91.31.91     ║
+#╚═════════════════════════════════════════════╝
+
+Options +FollowSymLinks 
+ServerSignature Off
+RewriteEngine On 
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+#Lỗi không tồn tại
+ErrorDocument 404 /?widget=404
+ErrorDocument 402 /?widget=404
+ErrorDocument 403 /?widget=404
+ErrorDocument 404 /?widget=404
+ErrorDocument 500 /?widget=404
+Options All -Indexes
+
+RewriteCond %{REQUEST_METHOD} ^(HEAD|TRACE|DELETE|TRACK|DEBUG) [NC]
+RewriteRule ^(.*)$ - [F]
+RewriteCond %{REQUEST_URI} (DB\.php|config\.php|bb-config\.php|int\.php|phpthumb\.php|thumb\.php|thumbs\.php|debug\.log) [NC,OR]
+RewriteCond %{REQUEST_URI} \.(htaccess|htpasswd|errordocs|logs|po|mo|ini|inc)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (;|<|>|'|"|\)|\(|%0A|%0D|%22|%27|%28|%3C|%3E|%00).*(libwww-perl|wget|python|nikto|curl|scan|java|winhttp|HTTrack|clshttp|archiver|loader|email|harvest|extract|grab|miner) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (havij|libwww-perl|wget|python|nikto|curl|scan|java|winhttp|clshttp|loader) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (%0A|%0D|%27|%3C|%3E|%00|%60) [NC,OR]
+RewriteCond %{HTTP_REFERER} (%0A|%0D|%27|%3C|%3E|%00) [NC,OR]
+RewriteCond %{THE_REQUEST} \?\ HTTP/ [NC,OR]
+RewriteCond %{THE_REQUEST} \/\*\ HTTP/ [NC,OR]
+RewriteCond %{HTTP_COOKIE} (`|'|"|%22|%0A|%0D|%27|%3C|%28|%3E|%00|%60).*(declare|char|set|cast|convert|delete|drop|exec|eval|insert|meta|script|select|truncate|update|union|md5|benchmark|create|alter|order|encode|if|and|or).* [NC,OR]
+RewriteCond %{QUERY_STRING} (`|'|"|%22|%0A|%0D|%27|%3C|%28|%3E|%00|%60).*(declare|char|set|cast|convert|delete|drop|exec|eval|insert|meta|script|select|truncate|update|union|md5|benchmark|create|alter|order|encode|if|and|or).* [NC,OR]
+RewriteCond %{QUERY_STRING} [a-zA-Z0-9_]=http:// [NC,OR]
+RewriteCond %{QUERY_STRING} [a-zA-Z0-9_]=(\.\.//?)+ [NC,OR]
+RewriteCond %{QUERY_STRING} [a-zA-Z0-9_]=/([a-z0-9_.]//?)+ [NC,OR]
+RewriteCond %{QUERY_STRING} \=PHP[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12} [NC,OR]
+RewriteCond %{QUERY_STRING} (\.\./|%2e%2e%2f|%2e%2e/|\.\.%2f|%2e\.%2f|%2e\./|\.%2e%2f|\.%2e/) [NC,OR]
+RewriteCond %{QUERY_STRING} ftp\: [NC,OR]
+RewriteCond %{QUERY_STRING} http\: [NC,OR] 
+RewriteCond %{QUERY_STRING} https\: [NC,OR]
+RewriteCond %{QUERY_STRING} \=\|w\| [NC,OR]
+RewriteCond %{QUERY_STRING} ^(.*)/self/(.*)$ [NC,OR]
+RewriteCond %{QUERY_STRING} ^(.*)cPath=http://(.*)$ [NC,OR]
+RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} (<|%3C)([^s]*s)+cript.*(>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} (\<|%3C).*embed.*(\>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} (<|%3C)([^e]*e)+mbed.*(>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} (\<|%3C).*object.*(\>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} (<|%3C)([^o]*o)+bject.*(>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} (\<|%3C).*iframe.*(\>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} (<|%3C)([^i]*i)+frame.*(>|%3E) [NC,OR] 
+RewriteCond %{QUERY_STRING} base64_encode.*\(.*\) [NC,OR]
+RewriteCond %{QUERY_STRING} base64_(en|de)code[^(]*\([^)]*\) [NC,OR]
+RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2}) [OR]
+RewriteCond %{QUERY_STRING} ^.*(\(|\)|<|>|%3c|%3e).* [NC,OR]
+RewriteCond %{QUERY_STRING} ^.*(\x00|\x04|\x08|\x0d|\x1b|\x20|\x3c|\x3e|\x7f).* [NC,OR]
+RewriteCond %{QUERY_STRING} (NULL|OUTFILE|LOAD_FILE) [OR]
+RewriteCond %{QUERY_STRING} (\.{1,}/)+(motd|etc|bin) [NC,OR]
+RewriteCond %{QUERY_STRING} (localhost|loopback|127\.0\.0\.1) [NC,OR]
+RewriteCond %{QUERY_STRING} (`|<|>|'|%0A|%0D|%27|%3C|%3E|%00|%60) [NC,OR]
+RewriteCond %{QUERY_STRING} concat[^\(]*\( [NC,OR]
+RewriteCond %{QUERY_STRING} union([^s]*s)+elect [NC,OR]
+RewriteCond %{QUERY_STRING} union([^a]*a)+ll([^s]*s)+elect [NC,OR]
+RewriteCond %{QUERY_STRING} \-[sdcr].*(allow_url_include|allow_url_fopen|safe_mode|disable_functions|auto_prepend_file) [NC,OR]
+RewriteCond %{QUERY_STRING} (;|<|>|'|"|\)|%0A|%0D|%22|%27|%3C|%3E|%00).*(/\*|union|select|insert|drop|delete|update|cast|create|char|convert|alter|declare|order|script|set|md5|benchmark|encode|and|or|if) [NC,OR]
+RewriteCond %{QUERY_STRING} (sp_executesql) [NC]
+RewriteRule ^(.*)$ - [F]
+
+RewriteRule ^transaction/callback/$ callback.php [L]
+RewriteRule ^transaction/callback$ callback.php [L]
+
+
+RewriteRule ^luckywheel$ ?act=wheel [L]
+RewriteRule ^luckywheel/$ ?act=wheel [L]
+RewriteRule ^luckywheel/free-fire$ ?act=wheel&type=free-fire [L]
+RewriteRule ^luckywheel/free-fire/$ ?act=wheel&type=free-fire [L]
+RewriteRule ^luckywheel/kc-free-fire$ ?act=wheel&type=kc-free-fire [L]
+RewriteRule ^luckywheel/kc-free-fire/$ ?act=wheel&type=kc-free-fire [L]
+
+RewriteRule ^luckywheel-roll/free-fire$ assets/ajax/site/wheel.php?type=ff [L]
+RewriteRule ^luckywheel-roll/kc-free-fire$ assets/ajax/site/wheel.php?type=kcff [L]
+RewriteRule ^history/wheel.html$ ?act=history_wheel [L]
+
+
+RewriteRule ^user/login/facebook.html$ oauth.php [L]
+RewriteRule ^user/login/facebook$ oauth.php [L]
+RewriteRule ^user/login/facebook/$ oauth.php [L]
+
+RewriteRule ^user/login.html$ ?act=login [L]
+RewriteRule ^user/login$ ?act=login [L]
+RewriteRule ^user/login/$ ?act=login [L]
+RewriteRule ^login$ ?act=login [L]
+RewriteRule ^login/$ ?act=login [L]
+RewriteRule ^logout.html$ logout.php [L]
+RewriteRule ^user/logout.html$ logout.php [L]
+RewriteRule ^user/logout/$ logout.php [L]
+RewriteRule ^user/logout$ logout.php [L]
+RewriteRule ^logout/$ logout.php [L]
+RewriteRule ^logout$ logout.php [L]
+RewriteRule ^user/register.html$ ?act=register [L]
+RewriteRule ^user/register$ ?act=register [L]
+RewriteRule ^user/register/$ ?act=register [L]
+RewriteRule ^register$ ?act=register [L]
+RewriteRule ^register/$ ?act=register [L]
+RewriteRule ^user/password/forgot.html$ ?act=forgot [L]
+RewriteRule ^user/password/forgot/$ ?act=forgot [L]
+RewriteRule ^user/password/forgot$ ?act=forgot [L]
+
+RewriteRule ^warning.html$ warning.php [L]
+RewriteRule ^shop-game/([0-9a-z\-\_]+).html$ ?accounts=$1 [L]
+RewriteRule ^accounts/([0-9]*).html$ ?act=view_accounts&id=$1 [L]
+RewriteRule ^random/([0-9]*).html$ ?act=view_random&id=$1 [L]
+RewriteRule ^purchase/buy/([0-9]*).html$ products/modals/purchase/buy.php?id=$1 [L]
+RewriteRule ^purchase/random/([0-9]*).html$ products/modals/purchase/random.php?id=$1 [L]
+RewriteRule ^history/buy.html$ ?act=history_buy [L]
+RewriteRule ^history/card.html$ ?act=history_card [L]
+RewriteRule ^user/profile.html$ ?act=profile [L]
+RewriteRule ^user/profile/change-phone.html$ ?act=profile&change_info=phone [L]
+RewriteRule ^user/profile/change-email.html$ ?act=profile&change_info=email [L]
+RewriteRule ^user/profile/change-password.html$ ?act=profile&change_info=password [L]
+RewriteRule ^user/recharge.html$ ?act=recharge [L]
+RewriteRule ^user/rut-kim-cuong.html$ ?act=rut-kc [L]
+
+RewriteRule ^random/free-fire-9k.html$ ?act=random_lq&type=1 [L]
+RewriteRule ^random/free-fire-50k.html$ ?act=random_lq&type=2 [L]
+RewriteRule ^random/free-fire-100k.html$ ?act=random_lq&type=3 [L]
+RewriteRule ^random/hom-kim-cuong-free-fire.html$ ?act=random_lq&type=4 [L]
+
+RewriteRule ^random/lien-quan-9k.html$ ?act=random_lq&type=5 [L]
+RewriteRule ^random/lien-quan-30k.html$ ?act=random_lq&type=6 [L]
+RewriteRule ^random/lien-quan-50k.html$ ?act=random_lq&type=7 [L]
+RewriteRule ^random/lien-quan-100k.html$ ?act=random_lq&type=8 [L]
+RewriteRule ^random/lien-quan-200k.html$ ?act=random_lq&type=9 [L]
+
+
+RewriteRule ^garena/lien-quan.html$ ?act=lien_quan [L]
+RewriteRule ^infomation.html$ ?act=info [L]
+RewriteRule ^infomation/password.html$ ?act=info&type=password [L]
+RewriteRule ^infomation/phone.html$ ?act=info&type=phone [L]
+RewriteRule ^infomation/email.html$ ?act=info&type=email [L]
+
+RewriteRule ^history/buy.html$ ?act=history_buy [L]
+RewriteRule ^history/recharge.html$ ?act=history_card [L]
+RewriteRule ^recharge.html$ ?act=recharge [L]
+
+#####################################################################################
+#ADMIN
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^admin/([0-9a-z\-\_]+)$ admin/?widget=$1 [L]
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^admin/([0-9a-z\-\_]+)/$ admin/?widget=$1 [L]
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^admin/([0-9a-z\-\_]+)/page/([0-9]*)$ admin/?widget=$1&page=$2 [L]
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^admin/([0-9a-z\-\_]+)/page/([0-9]*)/$ admin/?widget=$1&page=$2 [L]
+
+#lq
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^admin/([0-9a-z\-\_]+)/([0-9a-z\-\_]+)$ admin/?widget=$1&patch=$2 [L]
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^admin/([0-9a-z\-\_]+)/([0-9a-z\-\_]+)/$ admin/?widget=$1&patch=$2 [L]
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^admin/([0-9a-z\-\_]+)/([0-9a-z\-\_]+)/([0-9a-z\-\_]+)$ admin/?widget=$1&patch=$2&id=$3 [L]
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^admin/([0-9a-z\-\_]+)/([0-9a-z\-\_]+)/([0-9a-z\-\_]+)/$ admin/?widget=$1&patch=$2&id=$3 [L]
+
+

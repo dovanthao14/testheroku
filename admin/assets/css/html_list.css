@@ -1,0 +1,54 @@
+.account_page .right_bar {
+    float: right;
+    padding-left: 30px;
+    width: 299px;
+}
+.account_page .right_bar h4 {
+    font-size: 16px;
+    line-height: 36px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+.page_account {
+    margin-top: 20px;
+    text-align: center;
+}
+.page_account p {
+    border: 1px solid #66615B;
+    color: #66615B;
+    cursor: pointer;
+    display: inline;
+    float: none;
+    line-height: 33px;
+    margin-left: 2px;
+    margin-right: 3px;
+    padding: 5px 14px;
+    text-decoration: none;
+}
+.page_account p.active {
+    background-color: #66615B;
+    color: white;
+}
+.page_account p:hover {
+    background-color: #66615B;
+    color: white;
+}
+.phone_account_list {
+    display: none;
+}
+.pc_account_list {
+    display: none;
+}
+.fa-angle-double-left:before {
+  content: "\f100";
+}
+.fa-angle-double-right:before {
+  content: "\f101";
+}
+.fa-angle-double-up:before {
+  content: "\f102";
+}
+.fa-angle-double-down:before {
+  content: "\f103";
+}
