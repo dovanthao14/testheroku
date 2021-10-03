@@ -13,7 +13,7 @@ class DB
     private $hostname = 'mysql5031.site4now.net',
             $username = 'a7a99e_dothao',
             $password = 'dovanthao2404',
-            $dbname = 'getdatabase';
+            $dbname = 'db_a7a99e_dothao';
     // Biến lưu trữ kết nối
     public $cn = NULL;
  
